@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif !important;
+        }
+        .login{
+            width: 100%;
+            /* height:100%; */
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+        }
+        .login > a{
+            color: #1c355e;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login > img{
+            max-width: 100%;
+        }
+        .login-main{
+            margin-top: 2%;
+            display: flex;
+            justify-content: space-between;
+            width: 70vw;
+            padding-left:15% ;
+        }
+        .login-left{
+        height:65vh;
+        width: 35vw;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(https://www.shaadidukaan.com/view/images/login-bg2.jpg);
+       }
+       .left-border{
+        height:92%;
+        width: 92%;
+        margin: 4%;
+        background-color:transparent;
+        border: 2px solid white;
+       }
+        .login-right{
+            height:65vh;
+            width: 75vw;
+            display:flex;
+            justify-content: center;
+            text-align: center;
+            background-color: white;
+            box-shadow: 1px 1px 10px black;
+        }
+        form input{ 
+            font-size:1rem;  
+            padding: 3% 40% 3% 10%;
+              }
+        form button{
+            margin-top: 30px;
+            font-size:1rem;  
+            padding:10px 30px;
+            background-color: #ed4856;
+            color: white;
+            border: none;
+              }
+        .login-back > a{
+            display: flex;
+            justify-content: center;
+        }
+
+        .login-rightbody{
+            display: flex;
+            flex-direction: column;
+        }
+        .login-rightbody h1{        
+            font-size: 2rem;
+        }
+        .login-rightbody >h1 >span{
+            color:#ed4856 ;
+        }
+        .login-back a{
+            margin-top: 2%;
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="login">
+            <a href="">
+                <img src="https://www.shaadidukaan.com/view/images/logo.png" alt="">
+            </a>
+
+            <div class="login-main">
+
+                <div class="login-left">
+                    <div class="left-border"></div>
+                </div>
+
+                <div class="login-right">
+                    <div class="login-rightbody">
+                        <h1>Login <span>To Our</span> Site</h1>
+                        <p>To receive an OTP, kindly enter your mobile number.</p>
+                        <form action="#" class="login-form">
+                            <input type="text" name="username" placeholder="Registered Mobile No.">
+                            <button>Submit</button>
+                        </form> 
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="login-back">
+                <a href="">Do You Want To Go <span>Back</span></a>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
